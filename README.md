@@ -1,4 +1,4 @@
-# first full appliation Ruby on Rails 
+# First full application Ruby on Rails
 # By Samuel Rubens
 
 # Ruby on Rails Tutorial sample application
