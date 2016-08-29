@@ -1,2 +1,14 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<% provide(:title, "Help") %>
+<!DOCTYPE html>
+<html>
+<header>
+	<title><%= yield(:title) %> | MicroMsg Ruby on Rails</title>
+</header>
+<body>
+
+	<h1>Help</h1>
+	<p>Para obter ajuda ou informações sobre a aplicação MicroMsg
+	<a href="https://github.com/samuelrubens/microblog" target="_blank">Clique aqui</a>
+	</p>
+</body>
+</html>

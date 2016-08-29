@@ -1,2 +1,16 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<html>
+<header>
+	<title><%= yield(:title) %> | MicroMsg Ruby on Rails</title>
+</header>
+<body>
+
+	<h1>MicroMsg</h1>
+	<p>
+		Esta é a pagina inicial para a aplicação Micro Msg. trata-se de uma aplicação feita para fins acadêmicos e qualquer semelhança com o Twitter não é mera coincidência.
+		<br/>
+		Para mais informações <a href="https://github.com/samuelrubens/microblog" target="_blank">Clique aqui</a>
+	</p>
+</body>
+</html>
