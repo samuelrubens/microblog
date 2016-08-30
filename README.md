@@ -1,7 +1,7 @@
-# First full application Ruby on Rails
+#Full application Ruby on Rails sample
 # By Samuel Rubens
 
-# Ruby on Rails Tutorial sample application
+# Ruby on Rails sample application Twitter like
 
 This is the sample application
 
