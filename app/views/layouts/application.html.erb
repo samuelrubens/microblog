@@ -8,6 +8,16 @@
 <body>
     <%= render 'layouts/header' %>
     <div class="container">
+        <!-- forma feia de exibir a flash message código pode parecer confuso, mas funciona-->
+        <% flash.each do |message_type, message| %>
+            <div class="alert alert-<%= message_type %>"><%= message %></div>
+        <% end %>
+
+        <!-- Forma mais elegante usando helper content_tag
+            <% flash.each do |message_type, message| %>
+                <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+            <% end %>
+        -->
         <%= yield %>
         <%= render  'layouts/footer' %>
         <%= debug(params) if Rails.env.development? %>
